@@ -4,11 +4,11 @@ import BraftFinder from 'braft-finder';
 import { ColorUtils, ContentUtils } from 'braft-utils';
 import { Editor, EditorState } from 'draft-js';
 import { Map } from 'immutable';
-import mergeClassNames from '@maximusft/mergeclassnames';
+import mergeClassNames from '~/plugins/mergeClassNames/mergeClassNames';
 
-import languages from 'languages';
-import getKeyBindingFn from 'configs/keybindings';
-import defaultProps from 'configs/props';
+import languages from '~/languages';
+import getKeyBindingFn from '~/configs/keybindings';
+import defaultProps from '~/configs/props';
 import {
   keyCommandHandlers,
   returnHandlers,
@@ -19,7 +19,7 @@ import {
   pastedFilesHandlers,
   pastedTextHandlers,
   compositionStartHandler,
-} from 'configs/handlers';
+} from '~/configs/handlers';
 import {
   getBlockRendererFn,
   getBlockRenderMap,
@@ -27,7 +27,7 @@ import {
   getCustomStyleMap,
   getCustomStyleFn,
   getDecorators,
-} from 'renderers';
+} from '~/renderers';
 import {
   compositeStyleImportFn,
   compositeStyleExportFn,
@@ -36,8 +36,8 @@ import {
   compositeBlockImportFn,
   compositeBlockExportFn,
   getPropInterceptors,
-} from 'helpers/extension';
-import ControlBar from 'components/business/ControlBar';
+} from '~/helpers/extension';
+import ControlBar from '~/components/business/ControlBar';
 
 import 'draft-js/dist/Draft.css';
 import 'assets/scss/_base.scss';

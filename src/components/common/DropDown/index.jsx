@@ -1,9 +1,9 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
 import PropTypes from 'prop-types';
-import mergeClassNames from '@maximusft/mergeclassnames';
+import mergeClassNames from '~/plugins/mergeClassNames/mergeClassNames';
 
-import ResponsiveHelper from 'helpers/responsive';
+import ResponsiveHelper from '~/helpers/responsive';
 
 import './style.scss';
 

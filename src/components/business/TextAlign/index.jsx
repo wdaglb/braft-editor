@@ -3,9 +3,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 import { ContentUtils } from 'braft-utils';
-import mergeClassNames from '@maximusft/mergeclassnames';
+import mergeClassNames from '~/plugins/mergeClassNames/mergeClassNames';
 
-import ControlGroup from 'components/business/ControlGroup';
+import ControlGroup from '~/components/business/ControlGroup';
 
 class TextAlign extends React.Component {
   state = {
